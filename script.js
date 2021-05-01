@@ -120,4 +120,43 @@ console.log(typeof (null));
 console.log(typeof (Math)); //Object
 
 
+// Interacciones: alert, prompt, confirm
 
+// alert
+//alert('Hola Mundo');
+
+// prompt
+//let non = prompt('Digite el nombre', 'Hola');
+//alert(non);
+
+
+// Confirm
+let aguacate = confirm('¿Te gusta el aguacate?');
+console.log(aguacate);
+
+
+
+// CONVERSION DE TIPOS
+// Existen dos tipos de conversiones Explicitas e Implicitas
+
+// Converit a ToString
+let valor = true;
+console.log(typeof valor);
+
+valor = String(valor);
+console.log(valor);
+console.log(typeof valor);
+
+
+// Convertir a Numero
+//alert('6' / '2');
+ 
+let cadena = "123"
+let num_cad = Number(cadena);
+console.log(Number('Hola'));
+
+
+// Convertir a Booleano
+console.log(Boolean("Hola"))
+console.log(Boolean(String(0)))
+console.log(Boolean(0))
