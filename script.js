@@ -227,3 +227,124 @@ console.log(b);
 a=1;
 b=a++;
 console.log(b);
+
+// Comparaciones
+console.log(2 > 1);
+console.log(2 == 1);
+console.log(2 != 1);
+
+let res = 2>1;
+
+
+// Comparaciones entre cadenas
+console.log('z' > 'A');
+console.log('SHOW' > 'show');
+console.log('casa' > 'casas');
+
+
+// Comparaciones de diferentes tipos
+// Al comparar valores de diferentes tipos, JS convierte los valores a numeros.
+console.log('**********');
+console.log('2' > 1);
+console.log('01' == 1);
+console.log(true > 0);
+console.log(false == 0);
+console.log('hola' > 0);
+console.log('hola' < 0);
+
+
+console.log('**********');
+a=0;
+b='0';
+boleano_a = Boolean(a);
+boleano_b = Boolean(b);
+console.log(a == b);
+
+console.log('***** No diferencia de 0 de falso == *****');
+console.log(0 == false);
+console.log('' == false);
+
+
+// Igualacion Estricta
+console.log(0 === false);
+console.log(null === undefined);
+console.log(null == undefined);
+
+// Sentencias IF
+// IF de linea
+if(4>5) console.log('mensaje');
+
+if(4>5){
+    b = 5+3;
+    console.log('mensaje');
+}
+
+
+if('45'/3){
+    console.log('No entro');
+}
+
+if('0'){
+    console.log('Entro');
+}
+
+if(4/2){
+    console.log('Entro');
+}
+
+if(1){
+    console.log('Entro');
+}
+
+let  edadx;
+if(!edadx){
+    console.log('Variable definida');
+}else{
+    console.log('Variable indefinida');
+}
+
+let eda=20;
+console.log(eda>=18);
+
+// Operador ternario
+// Condicion ? operacion verdadera : operacion falsa;
+resultado = eda >= 18 ? x = 5 : x=7;
+
+// Operador Logico
+// or
+console.log('***** Operador OR *****');
+console.log(true || true) // true
+console.log(true || false) // true
+console.log(false || true) // true
+console.log(false || false) // false
+
+if(4 == 4 || 2 > 5) {
+    console.log('verdadero');
+}
+
+// AND
+console.log('***** Operador AND *****');
+console.log(true && true) // true
+console.log(true && false) // true
+console.log(false && true) // true
+console.log(false && false) // false
+
+if(4 == 4 && 2 > 5) {
+    console.log('verdadero');
+}
+
+
+let comparacion_booleana = true && false && true;
+comparacion_booleana = '0' || '0';
+comparacion_booleana = undefined || null || NaN || '';
+comparacion_booleana = undefined || null || 3 || '';
+
+
+// PREVALENCIA U ORDENENTRE OR Y AND
+// a && b || c && d == (a && b) || (c && d)
+
+// Negacion
+console.log('***** Negacion *****');
+console.log(!true);
+console.log(!false);
+console.log(!!undefined);
