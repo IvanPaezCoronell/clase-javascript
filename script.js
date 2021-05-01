@@ -160,3 +160,70 @@ console.log(Number('Hola'));
 console.log(Boolean("Hola"))
 console.log(Boolean(String(0)))
 console.log(Boolean(0))
+
+
+// OPERADORES BASICOS
+// Operadores unarios y binarios
+
+// Binarios 
+let a, b, resultado;
+a = 5;
+b = 2;
+resultado = a + b;
+resultado =a - b;
+resultado = a*b;
+resultado = a/b;
+resultado = a%b;
+resultado = a**b;
+
+// Unarios
+a =1;
+console.log(+a);
+
+a =-1;
+console.log(+a);
+
+console.log(+true);
+console.log(+false);
+
+a = "2";
+b = "3";
+console.log(+a + +b);
+console.log(Number(a)+Number(b));
+
+// Asignaciones
+a = 2+3
+a = b = c = 2+3
+
+c=2+3
+b=c
+a=b
+
+c=3-(a=b+1)
+
+// Modificadores
+a = a+2;
+a+= 2;
+a= a-2
+a-=2;
+
+
+// Incremento y Decremento
+a=2;
+a++;
+console.log(a);
+
+
+a=2;
+a--;
+console.log(a);
+
+
+// Posicion del incremento o decremento
+a=1;
+b=++a;
+console.log(b);
+
+a=1;
+b=a++;
+console.log(b);
