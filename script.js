@@ -348,3 +348,75 @@ console.log('***** Negacion *****');
 console.log(!true);
 console.log(!false);
 console.log(!!undefined);
+
+// BUCLES WHILE Y FOR
+// while
+let i=0;
+while(i<10){
+    console.log(`El valor de i es: ${i}`);
+    i++;
+}
+
+console.log(`***********`);
+let u=10;
+while(u){
+    console.log(`El valor de u es: ${u}`);
+    u--;
+}
+
+console.log(`****** FOR *****`);
+
+
+// FOR
+for(i=0; i<=10; i++){
+    console.log(`El valor de i es: ${i}`);
+}
+console.log(`***********`);
+for(i=10; i>=0; i--){
+    console.log(`El valor de i es: ${i}`);
+}
+
+
+// Alcance de una variable
+console.log(`****** ALCANCE DE UNA VARIABLE *****`);
+for(let j=0;j<=10;j++){
+    console.log(`El valor de j es: ${j}`);
+}
+//console.log(`El valor de j es: ${j}`);
+
+
+// Saltado de partes
+console.log(`****** Salto de partes *****`);
+w = 0;
+for(; w<=10;){
+    console.log(`El valor de w es: ${w++}`);
+}
+
+
+// Break y Continue
+console.log(`****** Break y Continue *****`);
+w = 0;
+while(1){
+    console.log(`El valor de w es: ${w++}`);
+    if(w==11) break;       
+}
+
+
+for(i=1; i<=10; i++){
+    if(i%2 !=0) continue;
+    console.log(`${i} es numero par.`);
+}
+
+
+
+// Etiquetas para Break y Continue
+console.log(`****** Etiquuetas *****`);
+principal: for(i=0; i<=10; i++){
+    for(j=0; j<=10; j++){
+        console.log(`La suma de i+j es: ${i+j}`);
+        if (j == 2) break principal;
+    }
+   
+    
+}
+console.log(`Salio`);
