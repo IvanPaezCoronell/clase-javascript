@@ -416,7 +416,109 @@ principal: for(i=0; i<=10; i++){
         console.log(`La suma de i+j es: ${i+j}`);
         if (j == 2) break principal;
     }
-   
-    
+
 }
 console.log(`Salio`);
+
+
+// Switch
+console.log(`****** Switch ******`);
+a = 2+2;
+switch(a){
+    case 3:
+        console.log('Elresultado es 3');
+        break;
+    case 4:
+        console.log('Elresultado es 4');
+        break;
+    default:
+        console.log('Ninguno de los dos valores');
+
+}
+
+
+
+
+// FUNCIONES
+console.log(`****** Funciones ******`);
+function saludar(){
+    console.log('Hola Mundo');
+}
+saludar();
+
+
+function saludar_nombre(){
+    let nombre_xx = 'ivan'
+    console.log(`Hola ${nombre_xx}`); // Variable local
+}
+saludar_nombre();
+
+
+// Variable externa
+let nombre_xx = "David";
+function saludar_nombre(){
+    let nombre_xx = 'ivan'
+    console.log(`Hola ${nombre_xx}`); 
+}
+console.log(`Hola ${nombre_xx}`); 
+saludar_nombre();
+
+
+ // PARAMETROS
+ console.log(`****** Parametros ******`);
+ function mensaje_(de, texto){
+     console.log(`${de}: ${texto}`);
+ }
+ mensaje_(`Ivan` , `Hola Michelle.`)
+ mensaje_(`Michelle` , `Hola Ivan.`)
+
+
+ // PARAMETROS PREDETERIMINADOS
+ console.log(`****** Parametros Predeterminados ******`);
+ function mensaje_(de, texto=``){
+     console.log(`${de}: ${texto}`);
+ }
+ mensaje_(`Ivan` )
+ mensaje_(`Michelle` , `Hola Ivan.`)
+
+
+
+ // HUF que devuelva la sumatoria de los numeros pares del 1 al x
+ console.log(`****** HUF ******`);
+ function sumatoria_pares(x){
+     sumatoria = 0;
+     for(i=0; i<= x; i++){
+         if(es_par(i)) sumatoria = sumatoria + i;
+     }
+     return sumatoria;
+ }
+ function es_par(n){
+     return n % 2 ==0;
+ }
+ console.log(sumatoria_pares(10))
+
+
+
+ // Expresion y Declaracion de una funcion
+//Delaracion
+function hola(){
+    console.log(`Hola Mundo`);
+}
+alert (hola) ;
+// expresion de una funcion
+let hola_ = function(){
+    
+    console.log(`Hola Mundo`); 
+  }
+
+
+  // FUNCIONES FLECHA
+  let hola_dos_flecha = () => console.log(`Hola Mundo`);
+  let saludar_nombre_xx = function(nomb){
+      console.log(`Hola ${nomb}!`);
+  }
+  let sumar_ex = function(a, b){
+       return a + b;
+  }
+  console.log(sumar_ex(4, 5)) 
+  //let sumar_ex_flecha = (a,b) => return a +b:
